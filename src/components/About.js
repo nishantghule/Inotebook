@@ -11,3 +11,6 @@ export default function About() {
     </div>
   )
 }
+
+
+//This is about function
