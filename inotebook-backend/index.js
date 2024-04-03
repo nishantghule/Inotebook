@@ -1,10 +1,11 @@
 const connectToMongo = require('./db');
 const express = require('express');
+var cors = require('cors')
 
 connectToMongo();
 const app = express();
 const port = 5000;
-
+app.use(cors())
 //This line configures Express to recognize incoming request objects as JSON objects.
 //express.json() is built-in middleware provided by the Express framework specifically designed to parse JSON data from incoming requests.
 app.use(express.json())
